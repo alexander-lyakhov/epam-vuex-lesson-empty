@@ -1,11 +1,11 @@
 ﻿<template>
 	<ul class="user-list">
-		<li class="user-list--item" v-for="user in users" :index="user.id">
+		<li class="user-list--item" v-for="user in []" :index="user.id">
 			<div class="avatar">
 				<img :src="avatarUrl" width="48" />
 			</div>
-			<span class="username">{{user.name}}</span>
-			<a href="#" class="btn-remove" @click.prevent="removeUser(user.id)">+</a>
+			<span class="username"></span>
+			<a href="#" class="btn-remove">+</a>
 		</li>
 	</ul>
 </template>
