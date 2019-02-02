@@ -6,8 +6,8 @@
 				<button class="btn-add" @click.prevent="addUser">Add</button>
 			</div>
 			<div class="account">
-				<span class="name">{{account.name}}</span>
-				<img class="avatar" :src="account.avatar" width="40" height="40" />
+				<span class="name">Name</span>
+				<img class="avatar" src="" width="40" height="40" />
 			</div>
 		</div>
 	</nav>
@@ -16,26 +16,6 @@
 <script>
 	export default {
 		name: 'NavBar',
-
-		computed: {
-			account() {
-				return this.$store.getters.account;
-			},
-		},
-
-		methods: {
-			addUser(e) {
-				const el = this.$refs.userName;
-
-				if (el.value.trim() !== '') {
-
-					this.$store.commit('addUser', el.value)
-
-					el.value = '';
-					el.focus();
-				}
-			}
-		}
 	}
 </script>
 

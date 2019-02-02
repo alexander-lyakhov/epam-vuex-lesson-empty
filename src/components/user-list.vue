@@ -21,18 +21,6 @@
 				avatarUrl: 'https://bit.ly/2TpLp1e'
 			}
 		},
-
-		computed: {
-			users() {
-				return this.$store.state.userList;
-			},
-		},
-
-		methods: {
-			removeUser(id) {
-				this.$store.commit('removeUser', id);
-			}
-		}
 	}
 </script>
 
@@ -41,26 +29,26 @@
 		margin-bottom: 16px;
 		background: $vue-dark-minus-5;
 		padding: 0 8px;
-		
+
 		.user-list--item {
 			font-size: 24px;
 			border-bottom: 1px solid $vue-dark-plus-15;
 			height: 80px;
 			display: flex;
 			align-items: center;
-				
+
 			&:last-child {
 				border: none;
 			}
 		}
-		
+
 		.avatar {
 			background: $vue-dark-plus-15;
 			width: 56px;
 			height: 56px;
 			padding: 4px;
 		}
-		
+
 		.username {
 			padding: 0 12px;
 		}
