@@ -6,7 +6,7 @@
 		</section>
 
 		<ul class="user-list">
-			<li class="user-list--item" v-for="user in []" :index="user.id">
+			<li class="user-list--item" v-for="user in []" :key="user.id">
 				<div class="avatar">
 					<img src="@/assets/user-avatar.png" width="48" />
 				</div>
