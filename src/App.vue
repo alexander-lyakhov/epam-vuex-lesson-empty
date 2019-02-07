@@ -1,12 +1,8 @@
 <template>
 	<div id="app">
-		<nav-bar></nav-bar>
+		<nav-bar />
 		<main>
-			<section>
-				<a class="load-users" href="#" @click.prevent="loadUsers">Load users</a>
-				<h2>Count: 0</h2>
-			</section>
-			<user-list></user-list>
+			<user-list />
 		</main>
 	</div>
 </template>
@@ -21,7 +17,7 @@
 		components: {
 			navBar,
 			userList
-		},
+		}
 	}
 </script>
 
@@ -38,20 +34,5 @@
 		min-height: 100%;
 		margin: auto;
 		padding: 76px 12px 32px;
-
-		section {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			.load-users {
-				font-size: 16px;
-				color: $vue-green-plus-25;
-			}
-
-			h2 {
-				margin-left: auto;
-			}
-		}
 	}
 </style>

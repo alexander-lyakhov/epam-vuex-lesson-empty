@@ -6,7 +6,7 @@
 				<button class="btn-add" @click.prevent="addUser">Add</button>
 			</div>
 			<div class="account">
-				<span class="name">Name</span>
+				<span class="name">Nmame</span>
 				<img class="avatar" src="" width="40" height="40" />
 			</div>
 		</div>
