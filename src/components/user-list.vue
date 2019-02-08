@@ -20,6 +20,12 @@
 <script>
 	export default {
 		name: 'UserList',
+
+		computed: {
+		},
+
+		methods: {
+		}
 	}
 </script>
 

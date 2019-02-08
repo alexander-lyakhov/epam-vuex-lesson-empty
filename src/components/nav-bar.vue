@@ -16,6 +16,15 @@
 <script>
 	export default {
 		name: 'NavBar',
+
+		created() {
+		},
+
+		computed: {
+		},
+
+		methods: {
+		}
 	}
 </script>
 
